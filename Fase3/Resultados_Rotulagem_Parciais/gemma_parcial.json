@@ -1,0 +1,39 @@
+{
+    "gemma3:27b": [
+        {
+            "index": 0,
+            "input": {
+                "texto_cliente": "Gostaria de relatar através dessa avaliação que pela primeira vez não tive uma experiência “azul”  nesse voo de Campinas para Lisboa. Eu e meu companion sempre fomos bem tratados e somos categoria Diamante na empresa.Viagem com códigos de reservas: RW1ISK e ZNMQ3X.Por 3 motivos:1 - Overweight: ao iniciar o despacho das malas deu-se início ao desconforto, na qual o bilhete comprado teria direito a transportar (69kgs por pessoa - totalizando 138kgs em nossas reservas) estávamos num total de 4 malas ( 2 de despacho normal e 2 com dimensões especiais). Em uma das malas foi cobrado aproximadamente 900 reais por 5kgs de overweight (sempre realizei viagens com a azul, e NUNCA foi cobrado sequer um kg a mais das malas, pq se fosse necessário eu teria direito a viajar com mais outras duas malas dentro do limite pré-estabelecido, ambas inclusas na reserva  executiva pois estávamos viajando em duas pessoas).2 - Dano na mala: para completar essa experiência, meu acompanhante/hugo Lopes teve que despachar as malas em seu nome, que por indelicadeza durante o transporte acabou rasgando (5cm).  Apos abertura de protoclo na Azul AZC9767329, foi proposto um voucher de 300 reais para o cliente, o que representa apenas 12% do dano causado.O total do prejuízo que tive que desembolsar no aeroporto que não estavam previstos: - 2 malas adicionais 800R$ cada - total 1.600- 1 mala com overweight de 5 kgs: 900 r$ cada!Total pago adicionalmente no aeroporto- 2500 reais para enviar 3 malas adicionais, com retorno de mala danificada. Além disso, nossos assentos estavam juntos e foram alterados no voo. Escrevo por aqui, pois fiquei bastante intrigado pelo fato da companhia vender uma passagem de executiva de valor aproximado de 8 a 10 mil reais o trecho - 500 mil pontos que são comercializados para um cliente diamante com cartão da empresa, cobrar quase 3 mil de despacho de bagagens, sendo uma delas com 5 kgs de overweight e cobrar 180 reais por cada kg de excesso, para que uma delas ainda seja recebida  danificada, para um cliente que ainda poderia ter despachado + 50kgs pois estávamos em duas pessoas Azul Diamante e oferecer o valor irrisório de 300 R$ de voucher."
+            },
+            "output": "Alvo 1: \"Overweight: ao iniciar o despacho das malas deu-se início ao desconforto\"\nRótulo(s): bagagem|BAGAGEM#EXCESSO\n\nAlvo 2: \"Em uma das malas foi cobrado aproximadamente 900 reais por 5kgs de overweight\"\nRótulo(s): bagagem|COBRANÇA#INDEVIDA\n\nAlvo 3: \"Dano na mala: para completar essa experiência, meu acompanhante/hugo Lopes teve que despachar as malas em seu nome, que por indelicadeza durante o transporte acabou rasgando (5cm).\"\nRótulo(s): bagagem|DANOS"
+        },
+        {
+            "index": 1,
+            "input": {
+                "texto_cliente": "Efetuei o pagamento de uma dívida junto ao banco.Ocorre que a dívida saiu do SPC/SERASA, mas foi incluída como PREJUÍZO junto ao REGISTRATO do BACEN.Isso tem dificultado acesso a crédito e outros.Solicito o cancelamento do registro junto ao registrado do BACEN."
+            },
+            "output": "\"Alvo principal\": \"a dívida saiu do SPC/SERASA, mas foi incluída como PREJUÍZO junto ao REGISTRATO do BACEN\"\nRótulo(s): registro|REGISTRO#INDESEJÁVEL\n"
+        },
+        {
+            "index": 2,
+            "input": {
+                "texto_cliente": "Minha mala foi quebrada no voo GRU-POA dia 29/8, processo POAG352279. A atendende da Gol no Aeroporto Salgado Filho em POA me disse que como a mala foi totalmente quebrada (tenho fotos e vídeo), eu receberia um catálogo para escolher uma nova. Entrei em contato duas vezes com a Gol dias 8/9 e 17/9, mas só pediram para aguardar, sem prazo definido. Entrei em contato via Twitter, sem resposta. No ReclameAqui me responderam apenas pedindo o número da reserva e não tive mais retorno. Tenho nova viagem marcada e estou sem mala."
+            },
+            "output": "\"Alvo principal\": \"Minha mala foi quebrada no voo GRU-POA dia 29/8, processo POAG352279.\"\n\"Rótulo(s): mala|BAGAGEM#AVARIA\"\n\n\"Alvo principal\": \"A atendende da Gol no Aeroporto Salgado Filho em POA me disse que como a mala foi totalmente quebrada (tenho fotos e vídeo), eu receberia um catálogo para escolher uma nova.\"\n\"Rótulo(s): catálogo|BAGAGEM#SUBSTITUIÇÃO\"\n\n\"Alvo principal\": \"Entrei em contato duas vezes com a Gol dias 8/9 e 17/9, mas só ped"
+        },
+        {
+            "index": 3,
+            "input": {
+                "texto_cliente": "Prezados, boa noite!Consultando alguns aplicativos, vi que existe uma conta em seu aplicativo em meu nome, mesmo que eu não seja cliente da empresa!!!Qual a explicação para isso?"
+            },
+            "output": "\"Alvo principal\": \"vi que existe uma conta em seu aplicativo em meu nome, mesmo que eu não seja cliente da empresa!!!\"\nRótulo(s): conta|CLIENTE#EXISTÊNCIA\n"
+        },
+        {
+            "index": 4,
+            "input": {
+                "texto_cliente": "Na data de hoje, 11/05/2023, entrei em contato para tentar mudar a data ou conseguir o reembolso dos pontos + dinheiro da passagem aérea HLTKNV, de GYN ao SDU (12/05/2023), pois fui designada para ficar de plantão durante o final de semana, então não poderei realizar a viagem por motivo de trabalho. No entanto, fiquei decepcionada com o atendimento da Azul, que geralmente é referência, pois não só fiquei esperando mais de 50 minutos para ser atendida, como a atendente além de negar a demanda também foi descortez. Ressalto que priorizava os voos da azul e viajava praticamente uma vez por mês, ou mais, com a cia, nessa mesma rota, no entanto depois do atendimento de hoje irei mudar isso."
+            },
+            "output": "\"Alvo principal\": \"tentar mudar a data ou conseguir o reembolso dos pontos + dinheiro da passagem aérea\",\n\"Rótulo(s)\": passagem aérea|PASSAGEM AÉREA#REEMBOLSO\n\n\"Alvo principal\": \"a atendente além de negar a demanda também foi descortez\",\n\"Rótulo(s)\": 1:{{'atendimento'|'ATENDIMENTO#QUALIDADE'}}, 2:{{'atendente'|'ATENDIMENTO#DESRESPEITO'}}\n"
+        }
+    ]
+}
