@@ -1,0 +1,906 @@
+[
+    {
+        "input": "i went here on a recommendation and will surely return time and time again .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "our family never expected such incredible entertainment in a restaurant .",
+        "target": "entertainment | AMBIENCE#GENERAL | incredible | positivo"
+    },
+    {
+        "input": "the waitress , seems to be more concerned of looking good than actually waitressing .",
+        "target": "waitress | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "my favorite place lol",
+        "target": "place | RESTAURANT#GENERAL | favorite | positivo"
+    },
+    {
+        "input": "i am not a vegetarian but , almost all the dishes were great .",
+        "target": "dishes | FOOD#QUALITY | great | positivo"
+    },
+    {
+        "input": "for each course we waited over 1 / 2 hour to 45 minutes and were never offered a drink .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "never too crowded and always great service .",
+        "target": "service | SERVICE#GENERAL | great | positivo [SEP] implicit | RESTAURANT#MISCELLANEOUS | never too crowded | positivo"
+    },
+    {
+        "input": "i noticed alot of indian people eatting there which is a great sign for an indian place !",
+        "target": "indian place | RESTAURANT#MISCELLANEOUS | great | positivo"
+    },
+    {
+        "input": "slightly on the pricey side but worth it !",
+        "target": "implicit | RESTAURANT#PRICES | pricey | negativo [SEP] implicit | RESTAURANT#GENERAL | worth | positivo"
+    },
+    {
+        "input": "when you add it all together , it just does n ' t seem worth it to me . . . especially considering the prices .",
+        "target": "implicit | RESTAURANT#GENERAL | does n ' t seem worth | negativo [SEP] implicit | RESTAURANT#PRICES | does n ' t seem worth | negativo"
+    },
+    {
+        "input": "nice value .",
+        "target": "implicit | RESTAURANT#PRICES | nice | positivo"
+    },
+    {
+        "input": "i ' d be horrified if my staff were turning away customers so early and so rudely !",
+        "target": "staff | SERVICE#GENERAL | horrified | negativo"
+    },
+    {
+        "input": "traditional french decour was pleasant though the hall was rather noisy - the restaurant was full and we had to raise our voices to be able to maintain a conversation .",
+        "target": "traditional french decour | AMBIENCE#GENERAL | pleasant | positivo [SEP] hall | AMBIENCE#GENERAL | noisy | negativo"
+    },
+    {
+        "input": "i ' ve been to this restaurant over a dozen times with no complaints to date .",
+        "target": "restaurant | RESTAURANT#GENERAL | no complaints | positivo"
+    },
+    {
+        "input": "and the service was simply spendid - quite a delight .",
+        "target": "service | SERVICE#GENERAL | spendid | positivo [SEP] service | SERVICE#GENERAL | delight | positivo"
+    },
+    {
+        "input": "do n ' t go to this place !",
+        "target": "place | RESTAURANT#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "melt in your mouth nigiri and sashmi , and very tasty rolls too .",
+        "target": "nigiri | FOOD#QUALITY | implicit | positivo [SEP] sashmi | FOOD#QUALITY | implicit | positivo [SEP] rolls | FOOD#QUALITY | tasty | positivo"
+    },
+    {
+        "input": "( besides that there should be more restaurants like it around the city ) .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "we went back to the restaurant and low and behold , we were seated at one of the tables that was available 30 minutes ago ! !",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "will never be back .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "for me dishes a little oily , but overall dining experience good .",
+        "target": "dishes | FOOD#QUALITY | oily | negativo [SEP] implicit | RESTAURANT#GENERAL | good | positivo"
+    },
+    {
+        "input": "great shabu shabu",
+        "target": "shabu shabu | FOOD#QUALITY | great | positivo"
+    },
+    {
+        "input": "we love the food , drinks , and atmosphere !",
+        "target": "food | FOOD#QUALITY | love | positivo [SEP] drinks | DRINKS#QUALITY | love | positivo [SEP] atmosphere | AMBIENCE#GENERAL | love | positivo"
+    },
+    {
+        "input": "– i was highly disappointed in the food at pagoda .",
+        "target": "food | FOOD#QUALITY | disappointed | negativo"
+    },
+    {
+        "input": "one special roll and one regular roll is enough to fill you up , but save room for dessert !",
+        "target": "dessert | FOOD#QUALITY | save room | positivo [SEP] special roll | FOOD#STYLE_OPTIONS | enough | positivo [SEP] regular roll | FOOD#STYLE_OPTIONS | enough | positivo"
+    },
+    {
+        "input": "there is no excuse for such lousy service !",
+        "target": "service | SERVICE#GENERAL | lousy | negativo"
+    },
+    {
+        "input": "the pizza is delicious and the proprietor is one of the nicest in nyc .",
+        "target": "pizza | FOOD#QUALITY | delicious | positivo [SEP] proprietor | SERVICE#GENERAL | nicest | positivo"
+    },
+    {
+        "input": "excellent",
+        "target": "implicit | RESTAURANT#GENERAL | excellent | positivo"
+    },
+    {
+        "input": "wait staff is blantently unappreciative of your business but its the best pie on the uws !",
+        "target": "wait staff | SERVICE#GENERAL | unappreciative | negativo [SEP] pie | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "and how many times can you pick up the same perfectly aligned set of napkins , inspect them vapidly and plonk them down in exactly the same place instead of venturing a glance at people who are there to help you make the rent ?",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "the people that work there are always so friendly you forget you are in new york sometimes .",
+        "target": "people | SERVICE#GENERAL | friendly | positivo"
+    },
+    {
+        "input": "service was just ok , it is not what you ' d expect for $ 500 .",
+        "target": "service | SERVICE#GENERAL | ok | negativo [SEP] implicit | RESTAURANT#PRICES | implicit | negativo"
+    },
+    {
+        "input": "the food was very good , a great deal , and the place its self was great .",
+        "target": "food | FOOD#QUALITY | good | positivo [SEP] food | FOOD#PRICES | a | positivo [SEP] place | AMBIENCE#GENERAL | great | positivo"
+    },
+    {
+        "input": "peppers , onions , relish , chilli , cheeses , you name it .",
+        "target": "implicit | FOOD#STYLE_OPTIONS | implicit | positivo"
+    },
+    {
+        "input": "the wine list is extensive and impressive .",
+        "target": "wine list | DRINKS#STYLE_OPTIONS | extensive | positivo [SEP] wine list | DRINKS#STYLE_OPTIONS | impressive | positivo"
+    },
+    {
+        "input": "the wait staff is very courteous and accomodating .",
+        "target": "wait staff | SERVICE#GENERAL | courteous | positivo [SEP] wait staff | SERVICE#GENERAL | accomodating | positivo"
+    },
+    {
+        "input": "you can easily hear him though so it was a pleasant sound and not overbearing .",
+        "target": "implicit | AMBIENCE#GENERAL | pleasant | positivo"
+    },
+    {
+        "input": "service ok but unfriendly , filthy bathroom .",
+        "target": "service | SERVICE#GENERAL | ok | negativo [SEP] service | SERVICE#GENERAL | unfriendly | negativo [SEP] bathroom | AMBIENCE#GENERAL | filthy | negativo"
+    },
+    {
+        "input": "no plans to return anytime soon .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "normally , places ask how hot you want it , but they did n ' t .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "i ' d definitely go back again .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "the rice was poor quality and was cooked so badly it was hard .",
+        "target": "rice | FOOD#QUALITY | poor quality | negativo [SEP] rice | FOOD#QUALITY | cooked so badly | negativo [SEP] rice | FOOD#QUALITY | hard | negativo"
+    },
+    {
+        "input": "the owner and staff are all japanese as well and that adds to the entire ambiance .",
+        "target": "owner | RESTAURANT#MISCELLANEOUS | implicit | positivo [SEP] staff | RESTAURANT#MISCELLANEOUS | implicit | positivo [SEP] ambiance | AMBIENCE#GENERAL | adds | positivo"
+    },
+    {
+        "input": "the dosas are skimpy , unattractive and drip with grease , and personally i ' d drink popcorn topping before i ' d eat another one of these .",
+        "target": "dosas | FOOD#STYLE_OPTIONS | skimpy | negativo [SEP] dosas | FOOD#QUALITY | unattractive | negativo"
+    },
+    {
+        "input": "everything i had was good , and i ' m a eater .",
+        "target": "implicit | FOOD#QUALITY | good | positivo"
+    },
+    {
+        "input": "going to bark is always worth the train ride , and will make your tongue and belly very happy !",
+        "target": "bark | RESTAURANT#GENERAL | worth | positivo [SEP] implicit | FOOD#QUALITY | happy | positivo"
+    },
+    {
+        "input": "there have been several occasions when we ' ve just not gotten some side dishes we ' ve ordered .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "i am never disappointed with there food .",
+        "target": "food | FOOD#QUALITY | never disappointed | positivo"
+    },
+    {
+        "input": "the staff has been nice , but they seemed really stressed and the unisex bathroom needs to be cleaned more often .",
+        "target": "staff | SERVICE#GENERAL | nice | positivo [SEP] staff | SERVICE#GENERAL | stressed | positivo [SEP] unisex bathroom | AMBIENCE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "a great choice at any cost and a great deal .",
+        "target": "implicit | RESTAURANT#GENERAL | great | positivo [SEP] implicit | RESTAURANT#PRICES | great | positivo"
+    },
+    {
+        "input": "we have been to this place many times , and always have great food , wine , and service .",
+        "target": "food | FOOD#QUALITY | great | positivo [SEP] wine | DRINKS#QUALITY | great | positivo [SEP] service | SERVICE#GENERAL | great | positivo"
+    },
+    {
+        "input": "for instance , plates were just dumped on the table , i was handed the wine list upside down , etc . . . .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "after the 4th time i asked again and the waiter than said after our dinner .",
+        "target": "waiter | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "great place to relax and enjoy your dinner",
+        "target": "place | AMBIENCE#GENERAL | great | positivo"
+    },
+    {
+        "input": "not only is the cuisine the best around , the service has always been attentive and charming .",
+        "target": "cuisine | FOOD#QUALITY | best | positivo [SEP] service | SERVICE#GENERAL | attentive | positivo [SEP] service | SERVICE#GENERAL | charming | positivo"
+    },
+    {
+        "input": "ca n ' t wait wait for my next visit .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "indoor was very cozy and cute .",
+        "target": "indoor | AMBIENCE#GENERAL | cozy | positivo [SEP] indoor | AMBIENCE#GENERAL | cute | positivo"
+    },
+    {
+        "input": "the service was excellent and the food was delicious .",
+        "target": "service | SERVICE#GENERAL | excellent | positivo [SEP] food | FOOD#QUALITY | delicious | positivo"
+    },
+    {
+        "input": "the food they serve is not comforting , not appetizing and uncooked .",
+        "target": "food | FOOD#QUALITY | not comforting | negativo [SEP] food | FOOD#QUALITY | not appetizing | negativo [SEP] food | FOOD#QUALITY | uncooked | negativo"
+    },
+    {
+        "input": "the decor was beautiful and unique .",
+        "target": "decor | AMBIENCE#GENERAL | beautiful | positivo [SEP] decor | AMBIENCE#GENERAL | unique | positivo"
+    },
+    {
+        "input": "this place , which is only a few months old , is perhaps queens ' biggest secret !",
+        "target": "place | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "great wine selection , gigondas is worth the price , and the house champagne is a great value .",
+        "target": "wine selection | DRINKS#STYLE_OPTIONS | great | positivo [SEP] gigondas | DRINKS#QUALITY | worth | positivo [SEP] house champagne | DRINKS#PRICES | great value | positivo"
+    },
+    {
+        "input": "i ' ve waited over one hour for food .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "any further needs we may have had could not have been met since no one stopped by the table .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "the only positive thing about mioposto is the nice location .",
+        "target": "location | LOCATION#GENERAL | nice | positivo [SEP] mioposto | RESTAURANT#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "they forgot a sandwich , did n ' t include plastic forks , and did n ' t include pita with the hummus platter .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "one of my favorite places in manhattan .",
+        "target": "implicit | RESTAURANT#GENERAL | favorite | positivo"
+    },
+    {
+        "input": "my best friend had the chicken shawarma and she still raves about it being the best anywhere !",
+        "target": "chicken shawarma | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "awesome",
+        "target": "implicit | RESTAURANT#GENERAL | awesome | positivo"
+    },
+    {
+        "input": "this restaurant was recommended by a local . . . as a matter of fact , he made the reservation for us and said we would not be disappointed !",
+        "target": "implicit | RESTAURANT#GENERAL | recommended | positivo"
+    },
+    {
+        "input": "they are extremely rude , not even apologizing for the horrible service we got and handing us a bill well over $ 500 for some drinks adn their pita bread !",
+        "target": "service | SERVICE#GENERAL | horrible | negativo [SEP] drinks | DRINKS#PRICES | implicit | negativo [SEP] pita bread | FOOD#PRICES | implicit | negativo [SEP] implicit | SERVICE#GENERAL | rude | negativo"
+    },
+    {
+        "input": "for 7 years they have put out the most tasty , most delicious food and kept it that way . . .",
+        "target": "food | FOOD#QUALITY | tasty | positivo [SEP] food | FOOD#QUALITY | delicious | positivo"
+    },
+    {
+        "input": "the price is reasonable although the service is poor .",
+        "target": "service | SERVICE#GENERAL | poor | negativo [SEP] implicit | RESTAURANT#PRICES | reasonable | positivo"
+    },
+    {
+        "input": "in summer - eat outside on a terrace ( another great feature of suan ) ! ! !",
+        "target": "terrace | AMBIENCE#GENERAL | great | positivo"
+    },
+    {
+        "input": "i highly recommend the restaurant based on our experience last night .",
+        "target": "restaurant | RESTAURANT#GENERAL | recommend | positivo"
+    },
+    {
+        "input": "we will definitely go back .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "the food is outstanding and the service is quick , friendly and very professional .",
+        "target": "food | FOOD#QUALITY | outstanding | positivo [SEP] service | SERVICE#GENERAL | quick | positivo [SEP] service | SERVICE#GENERAL | friendly | positivo [SEP] service | SERVICE#GENERAL | professional | positivo"
+    },
+    {
+        "input": "always great service !",
+        "target": "service | SERVICE#GENERAL | great | positivo"
+    },
+    {
+        "input": "my friend enjoyed the grilled alaskan king salmon with delectable creamed washington russet potatoes and crisp green beans .",
+        "target": "grilled alaskan king salmon | FOOD#QUALITY | enjoyed | positivo [SEP] creamed washington russet potatoes | FOOD#QUALITY | delectable | positivo [SEP] green beans | FOOD#QUALITY | crisp | positivo"
+    },
+    {
+        "input": "i do n ' t know if i ' ll be back . . . .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "the fish was not fresh and the rice tasted old and stale .",
+        "target": "fish | FOOD#QUALITY | not fresh | negativo [SEP] rice | FOOD#QUALITY | old | negativo [SEP] rice | FOOD#QUALITY | stale | negativo"
+    },
+    {
+        "input": "while i could have done without the youth who shared the evening with us , our wonderful server and food made the experience a very positive one .",
+        "target": "server | SERVICE#GENERAL | wonderful | positivo [SEP] food | FOOD#QUALITY | wonderful | positivo [SEP] implicit | RESTAURANT#MISCELLANEOUS | positive | negativo"
+    },
+    {
+        "input": "well i guess it ' s hard to be seated when one is invisible to the staff .",
+        "target": "staff | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "the service is amazing , i ' ve had different waiters and they were all nice , which is a rare thing in nyc .",
+        "target": "service | SERVICE#GENERAL | amazing | positivo [SEP] waiters | SERVICE#GENERAL | nice | positivo"
+    },
+    {
+        "input": "we asked for beverages and never received them .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "i also recommend the rice dishes or the different varieties of congee ( rice porridge ) .",
+        "target": "rice dishes | FOOD#QUALITY | recommend | positivo [SEP] congee ( rice porridge ) | FOOD#QUALITY | recommend | positivo"
+    },
+    {
+        "input": "the owner truly caters to all your needs .",
+        "target": "owner | SERVICE#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "although we were looking for regular lettuce and some walnuts the salads we got were great .",
+        "target": "salads | FOOD#QUALITY | great | positivo"
+    },
+    {
+        "input": "i will definitely be going back .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "moderate prices .",
+        "target": "implicit | RESTAURANT#PRICES | moderate | neutro"
+    },
+    {
+        "input": "on a hot day it was fabulous to stop in and enjoy lunch .",
+        "target": "implicit | RESTAURANT#GENERAL | fabulous | positivo"
+    },
+    {
+        "input": "excellent food for great prices",
+        "target": "food | FOOD#QUALITY | excellent | positivo [SEP] food | FOOD#PRICES | great | positivo"
+    },
+    {
+        "input": "it melted in my little mouth and the perfect consistency - not too fishy , creamy , and slightly buttery .",
+        "target": "implicit | FOOD#QUALITY | perfect consistency | positivo"
+    },
+    {
+        "input": "do n ' t dine at tamarind for the vegetarian dishes , they are simply not up to par with the non - veg selections .",
+        "target": "vegetarian dishes | FOOD#QUALITY | not up to par | negativo [SEP] non - veg selections | FOOD#QUALITY | implicit | positivo"
+    },
+    {
+        "input": "everything , and i mean everything on the menu is delectable .",
+        "target": "menu | FOOD#QUALITY | delectable | positivo"
+    },
+    {
+        "input": "worth visiting the 1st ave spot because it is the original store .",
+        "target": "1st ave spot | RESTAURANT#MISCELLANEOUS | worth | positivo"
+    },
+    {
+        "input": "we could have made a meal of the yummy dumplings from the dumpling menu .",
+        "target": "dumplings | FOOD#QUALITY | yummy | positivo"
+    },
+    {
+        "input": "i must say i am surprised by the bad reviews of the restaurant earlier in the year , though .",
+        "target": "restaurant | RESTAURANT#GENERAL | bad | positivo"
+    },
+    {
+        "input": "the food is all shared so we get to order together and eat together .",
+        "target": "food | FOOD#STYLE_OPTIONS | shared | positivo"
+    },
+    {
+        "input": "mmmmm . . . it was delicious .",
+        "target": "implicit | FOOD#QUALITY | delicious | positivo"
+    },
+    {
+        "input": "a pleasant surprise .",
+        "target": "implicit | RESTAURANT#GENERAL | pleasant | positivo"
+    },
+    {
+        "input": "it ' s a great place to order from or sit - in .",
+        "target": "place | RESTAURANT#MISCELLANEOUS | great | positivo"
+    },
+    {
+        "input": "for the finicky sushi eater and those who have sampled the best nyc has to offer , the fish is the freshest and the service is superb .",
+        "target": "fish | FOOD#QUALITY | freshest | positivo [SEP] service | SERVICE#GENERAL | superb | positivo"
+    },
+    {
+        "input": "best in all of nyc",
+        "target": "implicit | RESTAURANT#GENERAL | best | positivo"
+    },
+    {
+        "input": "more williamsburg garbage",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "i was pleasantly suprised .",
+        "target": "implicit | RESTAURANT#GENERAL | pleasantly | positivo [SEP] implicit | RESTAURANT#GENERAL | suprised | positivo"
+    },
+    {
+        "input": "the pizza is overpriced and soggy .",
+        "target": "pizza | FOOD#QUALITY | soggy | negativo [SEP] pizza | FOOD#PRICES | overpriced | negativo"
+    },
+    {
+        "input": "this place is a great bargain .",
+        "target": "place | RESTAURANT#PRICES | great bargain | positivo"
+    },
+    {
+        "input": "atmosphere was nice .",
+        "target": "atmosphere | AMBIENCE#GENERAL | nice | positivo"
+    },
+    {
+        "input": "in grammercy / union square / east village this is my neighbors and my favorite spot .",
+        "target": "spot | RESTAURANT#GENERAL | favorite | positivo"
+    },
+    {
+        "input": "too large for just two people but nothing was left .",
+        "target": "implicit | FOOD#STYLE_OPTIONS | too large | negativo [SEP] implicit | FOOD#QUALITY | implicit | positivo"
+    },
+    {
+        "input": "go there once and oh yes . . . you will go back . . . you will . . .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "i absolutely loved this place .",
+        "target": "place | RESTAURANT#GENERAL | loved | positivo"
+    },
+    {
+        "input": "best indian chinese in the city , by far !",
+        "target": "indian chinese | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "love this place , every time we are in the city this is one of the places we always go .",
+        "target": "place | RESTAURANT#GENERAL | love | positivo"
+    },
+    {
+        "input": "however , this place is a gem , and i wo n ' t stop going back .",
+        "target": "place | RESTAURANT#GENERAL | gem | positivo"
+    },
+    {
+        "input": "unhygienic",
+        "target": "implicit | FOOD#QUALITY | unhygienic | negativo"
+    },
+    {
+        "input": "also love their caeser salad .",
+        "target": "caeser salad | FOOD#QUALITY | love | positivo"
+    },
+    {
+        "input": "so about the prawns , they were fresh and had a slight crispiness about the batter . . . soooo good . . . the walnuts were cut in smaller pieces and very crunchy and tasty .",
+        "target": "prawns | FOOD#QUALITY | fresh | positivo [SEP] batter | FOOD#QUALITY | crispiness | positivo [SEP] walnuts | FOOD#QUALITY | crunchy | positivo [SEP] walnuts | FOOD#QUALITY | tasty | positivo"
+    },
+    {
+        "input": "great bottle of wine .",
+        "target": "bottle of wine | DRINKS#QUALITY | great | positivo"
+    },
+    {
+        "input": "i would not expect this for a $ 55 dinner .",
+        "target": "dinner | FOOD#QUALITY | implicit | negativo [SEP] dinner | FOOD#PRICES | implicit | negativo"
+    },
+    {
+        "input": "we shared the family platter and i especially enjoyed the black cod in sake kasu .",
+        "target": "black cod in sake kasu | FOOD#QUALITY | enjoyed | positivo"
+    },
+    {
+        "input": "oh , and there ' s hookah .",
+        "target": "hookah | AMBIENCE#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "the perfect spot .",
+        "target": "spot | RESTAURANT#GENERAL | perfect | positivo"
+    },
+    {
+        "input": "one of the best hot dogs i have ever eaten .",
+        "target": "implicit | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "what a tastly , flaky treat !",
+        "target": "implicit | FOOD#QUALITY | tastly | positivo [SEP] implicit | FOOD#QUALITY | flaky | positivo"
+    },
+    {
+        "input": "the cypriot restaurant has a lot going for it .",
+        "target": "cypriot restaurant | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "i have reservations about the all you can eat deal , however - - the choices are fairly limited and you can probably order more food than you can eat for less than $ 18 by just going off the menu .",
+        "target": "all you can eat deal | FOOD#STYLE_OPTIONS | limited | negativo [SEP] all you can eat deal | FOOD#PRICES | implicit | negativo"
+    },
+    {
+        "input": "food was fine , with a some little - tastier - than - normal salsa .",
+        "target": "food | FOOD#QUALITY | fine | positivo [SEP] salsa | FOOD#QUALITY | fine | positivo"
+    },
+    {
+        "input": "pizza here is consistently good .",
+        "target": "pizza | FOOD#QUALITY | good | positivo"
+    },
+    {
+        "input": "i ' m going back .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "supercilious scorn is in .",
+        "target": "implicit | SERVICE#GENERAL | supercilious | negativo"
+    },
+    {
+        "input": "i absolutely love this place ! ! !",
+        "target": "place | RESTAURANT#GENERAL | love | positivo"
+    },
+    {
+        "input": "our waiter was non - existent and after our food finally arrived over an hour after we ordered , we were not given any water or utensils .",
+        "target": "waiter | SERVICE#GENERAL | non - existent | negativo"
+    },
+    {
+        "input": "i picked the asparagus , which turned out to be incredible and perfectly prepared .",
+        "target": "asparagus | FOOD#QUALITY | incredible | positivo [SEP] asparagus | FOOD#QUALITY | perfectly prepared | positivo"
+    },
+    {
+        "input": "we did tip , i guess the model / waitress just wanted more and complained to the manager .",
+        "target": "waitress | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "had an awful experience at casa la femme on a saturday dinner .",
+        "target": "casa la femme | RESTAURANT#GENERAL | awful | negativo"
+    },
+    {
+        "input": "good food",
+        "target": "food | FOOD#QUALITY | good | positivo"
+    },
+    {
+        "input": "– schooner or later ' s charming location along the marina in long beach and average food does not , unfortunately , compensate for its very poor customer service .",
+        "target": "location along the marina in long beach | LOCATION#GENERAL | charming | positivo [SEP] food | FOOD#QUALITY | average | neutro [SEP] customer service | SERVICE#GENERAL | poor | negativo"
+    },
+    {
+        "input": "to their credit they removed the dish from the check ; but no manager stopped by to ask what the problem was .",
+        "target": "manager | SERVICE#GENERAL | implicit | negativo [SEP] implicit | SERVICE#GENERAL | to their credit | positivo"
+    },
+    {
+        "input": "the food is great and they make a mean bloody mary .",
+        "target": "food | FOOD#QUALITY | great | positivo [SEP] bloody mary | DRINKS#QUALITY | mean | positivo"
+    },
+    {
+        "input": "i highly recommend the sophia pizza .",
+        "target": "sophia pizza | FOOD#QUALITY | recommend | positivo"
+    },
+    {
+        "input": "the pizza ' s are thin crust and the menu offers very creative combinations and toppings .",
+        "target": "pizza ' s | FOOD#STYLE_OPTIONS | thin | positivo [SEP] menu | FOOD#STYLE_OPTIONS | creative | positivo"
+    },
+    {
+        "input": "poor service and management",
+        "target": "service | SERVICE#GENERAL | poor | negativo [SEP] management | SERVICE#GENERAL | poor | negativo"
+    },
+    {
+        "input": "the food is excellent !",
+        "target": "food | FOOD#QUALITY | excellent | positivo"
+    },
+    {
+        "input": "the place is the next best thing to my moms cooking .",
+        "target": "implicit | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "raymond the bartender rocks !",
+        "target": "raymond | SERVICE#GENERAL | rocks | positivo"
+    },
+    {
+        "input": "unique apppetizers .",
+        "target": "apppetizers | FOOD#QUALITY | unique | positivo"
+    },
+    {
+        "input": "she does n ' t make you feel welcome and treats you like an annoyance .",
+        "target": "implicit | SERVICE#GENERAL | annoyance | negativo"
+    },
+    {
+        "input": "they wouldnt even let me finish my glass of wine before offering another .",
+        "target": "implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "both times i was extremely dissappointed by the service , which was boarderline rude .",
+        "target": "service | SERVICE#GENERAL | dissappointed | negativo [SEP] service | SERVICE#GENERAL | rude | negativo"
+    },
+    {
+        "input": "this has got to be one of the most overrated restaurants in brooklyn .",
+        "target": "implicit | RESTAURANT#GENERAL | overrated | negativo"
+    },
+    {
+        "input": "this is one of the best comfort food places in the city .",
+        "target": "implicit | RESTAURANT#GENERAL | best | positivo [SEP] implicit | RESTAURANT#GENERAL | comfort | positivo"
+    },
+    {
+        "input": "this place is not inviting and the food is totally weird .",
+        "target": "place | AMBIENCE#GENERAL | not inviting | negativo [SEP] food | FOOD#QUALITY | weird | negativo"
+    },
+    {
+        "input": "the menu is very limited - i think we counted 4 or 5 entrees .",
+        "target": "menu | FOOD#STYLE_OPTIONS | limited | negativo"
+    },
+    {
+        "input": "me and my girls will definitely go back .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "– . . . and the best summertime deck experience - - they will even bring you a blanket if you get cold in the seattle evening weather .",
+        "target": "deck | AMBIENCE#GENERAL | best | positivo [SEP] implicit | SERVICE#GENERAL | best | positivo"
+    },
+    {
+        "input": "unless you are just stopping in for a few drinks i would n ' t recommend going here .",
+        "target": "drinks | DRINKS#QUALITY | implicit | positivo [SEP] implicit | RESTAURANT#GENERAL | n ' t recommend | negativo"
+    },
+    {
+        "input": "the pizza ' s are light and scrumptious .",
+        "target": "pizza ' s | FOOD#QUALITY | light | positivo [SEP] pizza ' s | FOOD#QUALITY | scrumptious | positivo"
+    },
+    {
+        "input": "warm and friendly in the winter and terrific outdoor seating in the warmer months .",
+        "target": "outdoor seating | AMBIENCE#GENERAL | terrific | positivo [SEP] implicit | AMBIENCE#GENERAL | warm | positivo [SEP] implicit | AMBIENCE#GENERAL | friendly | positivo"
+    },
+    {
+        "input": "i love the warm & cosy environment .",
+        "target": "environment | AMBIENCE#GENERAL | warm | positivo [SEP] environment | AMBIENCE#GENERAL | cosy | positivo"
+    },
+    {
+        "input": "service was very prompt but slightly rushed .",
+        "target": "service | SERVICE#GENERAL | prompt | positivo [SEP] service | SERVICE#GENERAL | rushed | positivo"
+    },
+    {
+        "input": "after dinner the manager grabbed my boyfriend , asked him : where are you from . . . maybe you dont know how things work in america . . . and in the end stormed away almost teareyed yelling that tips are the only thing they survive on .",
+        "target": "manager | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "service was slow , but the people were friendly .",
+        "target": "service | SERVICE#GENERAL | slow | negativo [SEP] people | SERVICE#GENERAL | friendly | positivo"
+    },
+    {
+        "input": "highly impressed from the decor to the food to the hospitality to the great night i had !",
+        "target": "decor | AMBIENCE#GENERAL | impressed | positivo [SEP] food | FOOD#QUALITY | impressed | positivo [SEP] implicit | SERVICE#GENERAL | hospitality | positivo [SEP] implicit | RESTAURANT#GENERAL | great | positivo"
+    },
+    {
+        "input": "never have i had such dramatic delivery guys ( a lot of huffing and panting and muttering under breath b / c i live in a walkup ) who always seem disappointed with their tips .",
+        "target": "delivery guys | SERVICE#GENERAL | dramatic | negativo"
+    },
+    {
+        "input": "i rejected it because in the process of attempting to fix the eggs they broke something else in the dish and i was too frustrated to continue .",
+        "target": "dish | FOOD#QUALITY | frustrated | negativo"
+    },
+    {
+        "input": "my wife and i always enjoy the young , not always well trained but nevertheless friendly , staff , all of whom have a story .",
+        "target": "staff | SERVICE#GENERAL | enjoy | positivo [SEP] staff | SERVICE#GENERAL | friendly | positivo"
+    },
+    {
+        "input": "fresh ingrediants and super tasty .",
+        "target": "ingrediants | FOOD#QUALITY | fresh | positivo [SEP] implicit | FOOD#QUALITY | super | positivo"
+    },
+    {
+        "input": "the food arrived 20 minutes after i called , cold and soggy .",
+        "target": "food | FOOD#QUALITY | cold | negativo [SEP] food | FOOD#QUALITY | soggy | negativo [SEP] implicit | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "i think i ' ve had some the best meals of my life at minnow .",
+        "target": "meals | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "the waitress was very patient with us and the food is phenomenal !",
+        "target": "waitress | SERVICE#GENERAL | patient | positivo [SEP] food | FOOD#QUALITY | phenomenal | positivo"
+    },
+    {
+        "input": "to the owners of open sesame . . . bravo . . . i ca n ' t wait to come back to dine at your restaurant !",
+        "target": "open sesame | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "just not good at all .",
+        "target": "implicit | FOOD#QUALITY | not good | negativo"
+    },
+    {
+        "input": "you can do it here .",
+        "target": "implicit | FOOD#STYLE_OPTIONS | implicit | positivo"
+    },
+    {
+        "input": "best dining experience in the west village !",
+        "target": "implicit | RESTAURANT#GENERAL | best | positivo"
+    },
+    {
+        "input": "the food was good .",
+        "target": "food | FOOD#QUALITY | good | positivo"
+    },
+    {
+        "input": "surprisingly nothing could be further from the truth .",
+        "target": "implicit | RESTAURANT#MISCELLANEOUS | surprisingly | positivo"
+    },
+    {
+        "input": "fish is so very fresh .",
+        "target": "fish | FOOD#QUALITY | fresh | positivo"
+    },
+    {
+        "input": "very affordable and excellent ambient !",
+        "target": "ambient | AMBIENCE#GENERAL | excellent | positivo [SEP] implicit | RESTAURANT#PRICES | affordable | positivo"
+    },
+    {
+        "input": "– ray ' s is the place to go for high quality seafood dinners .",
+        "target": "seafood dinners | FOOD#QUALITY | high quality | positivo"
+    },
+    {
+        "input": "leave room for dessert .",
+        "target": "dessert | FOOD#QUALITY | implicit | positivo"
+    },
+    {
+        "input": "this is the most wonderful restaurant in all of new york city , not just brooklyn . . .",
+        "target": "restaurant | RESTAURANT#GENERAL | wonderful | positivo"
+    },
+    {
+        "input": "went here on sat 1 / 26 and was disappointed .",
+        "target": "implicit | RESTAURANT#GENERAL | disappointed | negativo"
+    },
+    {
+        "input": "the prices are wonderfully low .",
+        "target": "implicit | RESTAURANT#PRICES | wonderfully low | positivo"
+    },
+    {
+        "input": "i ' m astonished that this restaurant is categorized as $ $ $ rather than $ $ $ $ .",
+        "target": "restaurant | RESTAURANT#PRICES | astonished | negativo"
+    },
+    {
+        "input": "while finishing our meals which included a high - end bottle of wine , our son ' s fiance joined us for a glass of wine and dessert .",
+        "target": "bottle of wine | DRINKS#QUALITY | high - end | positivo"
+    },
+    {
+        "input": "it ' s one of our favorite places to eat in ny .",
+        "target": "implicit | RESTAURANT#GENERAL | favorite | positivo"
+    },
+    {
+        "input": "the fried dumplings are great !",
+        "target": "fried dumplings | FOOD#QUALITY | great | positivo"
+    },
+    {
+        "input": "delicious",
+        "target": "implicit | FOOD#QUALITY | delicious | positivo"
+    },
+    {
+        "input": "we had fun eating in there , we were there like around 3 a . m . in the morning !",
+        "target": "implicit | RESTAURANT#GENERAL | fun | positivo"
+    },
+    {
+        "input": "snotty attitude",
+        "target": "implicit | SERVICE#GENERAL | snotty | negativo"
+    },
+    {
+        "input": "i ' m still mad that i had to pay for lousy food .",
+        "target": "food | FOOD#QUALITY | lousy | negativo"
+    },
+    {
+        "input": "best meal in a long time !",
+        "target": "meal | FOOD#QUALITY | best | positivo"
+    },
+    {
+        "input": "it is sad there is not many people who frequent eating at places like these that look pricey because they are at the hotel . . . but they are definitely one you dont want to miss , esp if your in downtown san jose .",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "they are not helpful in the least and will give you the grand run around so by the time the event date rolls around you will not only regret chosing this place , but also become hostile !",
+        "target": "implicit | SERVICE#GENERAL | not helpful | negativo"
+    },
+    {
+        "input": "completely over rated !",
+        "target": "implicit | RESTAURANT#GENERAL | over rated | negativo"
+    },
+    {
+        "input": "space was limited , but the food made up for it .",
+        "target": "space | RESTAURANT#MISCELLANEOUS | limited | negativo [SEP] food | FOOD#QUALITY | implicit | positivo"
+    },
+    {
+        "input": "service was devine , oysters where a sensual as they come , and the price ca n ' t be beat ! ! !",
+        "target": "service | SERVICE#GENERAL | devine | positivo [SEP] oysters | FOOD#QUALITY | sensual | positivo [SEP] implicit | RESTAURANT#PRICES | implicit | positivo"
+    },
+    {
+        "input": "the food is not what it once was ( potions have seriously seen downsizing ) prices have gone up , and the service is the worst i have experienced anywhere ( including mainland europe ) .",
+        "target": "food | FOOD#QUALITY | implicit | negativo [SEP] food | FOOD#PRICES | implicit | negativo [SEP] the | SERVICE#GENERAL | the | negativo [SEP] service | SERVICE#GENERAL | worst | negativo"
+    },
+    {
+        "input": "indo chinese food , pretty good . . .",
+        "target": "indo chinese food | FOOD#QUALITY | good | positivo"
+    },
+    {
+        "input": "the steak was done to my exact liking ( medium rare ) and was nice and juicy .",
+        "target": "steak | FOOD#QUALITY | nice | positivo [SEP] steak | FOOD#QUALITY | juicy | positivo"
+    },
+    {
+        "input": "all in all we ' re already coming up with excuses to go ahead really soon in the next few wks ! ! ! !",
+        "target": "implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "dumbfoundingly poor",
+        "target": "implicit | RESTAURANT#GENERAL | poor | negativo"
+    },
+    {
+        "input": "the pizza was delivered cold and the cheese was n ' t even fully melted !",
+        "target": "pizza | FOOD#QUALITY | cold | negativo [SEP] cheese | FOOD#QUALITY | was n ' t even fully melted | negativo"
+    },
+    {
+        "input": "but the staff was so horrible to us .",
+        "target": "staff | SERVICE#GENERAL | horrible | negativo"
+    },
+    {
+        "input": "it was pretty inexpensive too .",
+        "target": "implicit | RESTAURANT#PRICES | inexpensive | positivo"
+    },
+    {
+        "input": "you would think they would make up for it with service , sadly , no .",
+        "target": "service | SERVICE#GENERAL | sadly | negativo"
+    },
+    {
+        "input": "i can eat here every day of the week really lol love this place . . . )",
+        "target": "place | RESTAURANT#GENERAL | love | positivo"
+    },
+    {
+        "input": "decor is nice though service can be spotty .",
+        "target": "decor | AMBIENCE#GENERAL | nice | positivo [SEP] service | SERVICE#GENERAL | spotty | negativo"
+    },
+    {
+        "input": "their crab eggs benedict is addicting .",
+        "target": "crab eggs benedict | FOOD#QUALITY | addicting | positivo"
+    },
+    {
+        "input": "i felt ackward and next time went to the casino bathroom .",
+        "target": "implicit | RESTAURANT#MISCELLANEOUS | ackward | negativo"
+    },
+    {
+        "input": "the tuna and wasabe potatoes are excellent .",
+        "target": "tuna | FOOD#QUALITY | excellent | positivo [SEP] wasabe potatoes | FOOD#QUALITY | excellent | positivo"
+    },
+    {
+        "input": "price is high but the food is good , so i would come back again .",
+        "target": "food | FOOD#QUALITY | good | positivo [SEP] food | FOOD#PRICES | high | negativo [SEP] implicit | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "this place is pricey , and yes , the food is worth it ; but the service makes you feel like you should be paying a quater of the price .",
+        "target": "place | RESTAURANT#PRICES |  | negativo [SEP] the | FOOD#QUALITY | is | positivo [SEP] the | SERVICE#GENERAL | implicit | negativo"
+    },
+    {
+        "input": "each time we ' ve been , the front of house staff ( not the waiters - they ' re fantastic - but the people who greet and seat you ) has been so hideous to us that were it not for the exceptional fish dishes i would never return .",
+        "target": "waiters | SERVICE#GENERAL | fantastic | positivo [SEP] front of house staff | SERVICE#GENERAL | hideous | negativo [SEP] fish dishes | FOOD#QUALITY | exceptional | positivo"
+    },
+    {
+        "input": "i would say that all was fine and tasty but the heaviness on my stomach someting that i ca n ' t not mention or undermine .",
+        "target": "implicit | FOOD#QUALITY | heaviness | negativo"
+    },
+    {
+        "input": "– i ca n ' t say enough about this place .",
+        "target": "place | RESTAURANT#GENERAL | implicit | positivo"
+    },
+    {
+        "input": "chennai garden is my favorite indian restaurant in the city .",
+        "target": "chennai garden | RESTAURANT#GENERAL | favorite | positivo"
+    },
+    {
+        "input": "thalia is a beautiful restaurant with beautiful people serving you , but the food does n ' t quite match up .",
+        "target": "people | SERVICE#GENERAL | beautiful | positivo [SEP] food | FOOD#QUALITY | does n ' t quite match up | negativo [SEP] thalia | AMBIENCE#GENERAL | beautiful | positivo"
+    },
+    {
+        "input": "great open and friendly ambience .",
+        "target": "ambience | AMBIENCE#GENERAL | great | positivo [SEP] ambience | AMBIENCE#GENERAL | open | positivo [SEP] ambience | AMBIENCE#GENERAL | friendly | positivo"
+    },
+    {
+        "input": "toons has recently been redone , so it ' s now a very attractive space .",
+        "target": "toons | AMBIENCE#GENERAL | attractive | positivo"
+    },
+    {
+        "input": "the hot dogs are good , yes , but the reason to get over here is the fantastic pork croquette sandwich , perfect on its supermarket squishy bun .",
+        "target": "hot dogs | FOOD#QUALITY | good | positivo [SEP] pork croquette sandwich | FOOD#QUALITY | fantastic | positivo [SEP] bun | FOOD#QUALITY | perfect | positivo"
+    },
+    {
+        "input": "my wife had barely touched that mess of a dish .",
+        "target": "dish | FOOD#QUALITY | mess | negativo"
+    },
+    {
+        "input": "big thick pepperoni",
+        "target": "pepperoni | FOOD#STYLE_OPTIONS | big | positivo [SEP] pepperoni | FOOD#STYLE_OPTIONS | thick | positivo"
+    },
+    {
+        "input": "during the course of the past 3 months , the chef and staff changed and it was not for the better .",
+        "target": "chef | FOOD#QUALITY | not for the better | negativo [SEP] staff | SERVICE#GENERAL | not for the better | negativo"
+    }
+]
