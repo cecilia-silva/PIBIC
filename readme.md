@@ -28,7 +28,7 @@ Link: https://doi.org/10.18653/v1/2021.acl-long.29
 
 MEMD-ABSA:
 
-Repositório oficial: https://github.com/NUSTM/MEMD-ABSA.
+Repositório oficial: https://github.com/NUSTM/MEMD-ABSA
 Link: https://doi.org/10.48550/arXiv.2306.16956
 
 
