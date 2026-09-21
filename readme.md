@@ -1,4 +1,4 @@
-#Inteligência Competitiva e a Voz do Consumidor: um framework baseado em modelos de língua para extração de aspectos de reclamações
+# Inteligência Competitiva e a Voz do Consumidor: um framework baseado em modelos de língua para extração de aspectos de reclamações
 
 Neste projeto foi realizada uma investigação acerca do desempenho das Large Language Models (LLMs) em comparação a modelos já consolidados na área de Processamento de Linguagem Natural (PLN), como o Support Vector Machine (SVM) e o modelo BERT-Multilíngue (M-BERT), na tarefa de extração de aspectos e da respectiva categoria em datasets contendo reclamações de consumidores retiradas de plataformas online.
 
