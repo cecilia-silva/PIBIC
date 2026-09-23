@@ -1,0 +1,7 @@
+requirements_rotulagem.txt
+requests==2.32.4
+pandas==2.2.3
+openai==2.54.0
+tqdm==4.67.3
+scikit-learn==1.6.1
+ftfy==6.3.1
