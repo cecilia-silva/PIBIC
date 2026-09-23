@@ -10,7 +10,7 @@ Fase 2: Extração e avaliação dos modelos de LLMs que obtiveram os melhores r
 
 Fase 3: Rotulagem de um conjunto de dados extraído da plataforma 'consumidor.gov' contendo avaliações de usuários online pela LLM com o desempenho superior quando realizada a comparação somente entre os grandes modelos de linguagem e com o desempenho mais satisfatório quando comparado com os modelos SVM e M-BERT.
 
-Fase 4: Aplicação da técnica de destilação de conhecimento (knowledge distillation) na abordagem teacher-student, com o objetivo de transferir a capacidade de extração de um modelo de linguagem de grande porte para um modelo consideravelmente menor. Nesta fase, o modelo Qwen2.5-72B-Instruct atuou como professor, sendo responsável pela nova rotulagem do conjunto de dados, gerando os pseudo-rótulos utilizados no treinamento. O modelo Qwen2.5-7B-Instruct atuou como aluno, sendo ajustado por fine-tuning supervisionado (Low-Rank Adaptation — LoRA) a partir das saídas geradas pelo professor, seguindo os conceitos da técnica Sequence-Level Knowledge Distillation (Kim e Rush, 2016). O desempenho do aluno foi avaliado em um conjunto de teste reservado, antes e depois do fine-tuning, utilizando as métricas de precisão, recall, F1-score e acurácia, permitindo mensurar o ganho obtido exclusivamente pelo ajuste dos pesos do modelo.
+Fase 4: Aplicação da técnica de destilação de conhecimento (knowledge distillation) na abordagem teacher-student, com o objetivo de transferir a capacidade de extração de um modelo de linguagem de grande porte para um modelo consideravelmente menor. Nesta fase, o modelo Qwen2.5-72B-Instruct atuou como professor, sendo responsável pela nova rotulagem do conjunto de dados, gerando os pseudo-rótulos utilizados no treinamento. O modelo Qwen2.5-7B-Instruct atuou como aluno, sendo ajustado por fine-tuning supervisionado (Low-Rank Adaptation (LoRA)) a partir das saídas geradas pelo professor, seguindo os conceitos da técnica Sequence-Level Knowledge Distillation (Kim e Rush, 2016). O desempenho do aluno foi avaliado em um conjunto de teste reservado, antes e depois do fine-tuning, utilizando as métricas de precisão, revocação, F1-score e acurácia, permitindo mensurar o ganho obtido exclusivamente pelo ajuste dos pesos do modelo.
 
 
 Ao final, o dataset disponibilizado foi estruturado da forma a seguir:
@@ -21,7 +21,7 @@ Ao final, o dataset disponibilizado foi estruturado da forma a seguir:
 
 - Última coluna com todos os pares aspecto-categoria encontrados pelo modelo Gemma3:27b por alvo identificado.
 
-Em relação a fase 4: O modelo aluno apresentou melhora em todas as métricas após o fine-tuning: a precisão passou de 1,3% para 5,5%, o recall de 0,8% para 5,7%, o F1-score de 1,0% para 5,6% e a acurácia de 0,5% para 2,9%. Dessa forma, foi identificado que o treinamento com o padrão de extração do modelo professor proporcionou um ganho expressivo na capacidade do modelo aluno em identificar os alvos e os pares contendo aspecto e categoria em cenários de grande volume de textos opinativos.
+Em relação a fase 4: O modelo aluno apresentou melhora em todas as métricas após o fine-tuning: a precisão passou de 1,3% para 5,5%, a revocação de 0,8% para 5,7%, o F1-score de 1,0% para 5,6% e a acurácia de 0,5% para 2,9%. Dessa forma, foi identificado que o treinamento com o padrão de extração do modelo professor proporcionou um ganho expressivo na capacidade do modelo aluno em identificar os alvos e os pares contendo aspecto e categoria em cenários de grande volume de textos opinativos.
 
 Datasets Utilizados:
 
