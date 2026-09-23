@@ -13,7 +13,7 @@ Fase 3: Rotulagem de um conjunto de dados extraído da plataforma 'consumidor.go
 Fase 4: Aplicação da técnica de destilação de conhecimento (knowledge distillation) na abordagem teacher-student, com o objetivo de transferir a capacidade de extração de um modelo de linguagem de grande porte para um modelo consideravelmente menor. Nesta fase, o modelo Qwen2.5-72B-Instruct atuou como professor, sendo responsável pela nova rotulagem do conjunto de dados, gerando os pseudo-rótulos utilizados no treinamento. O modelo Qwen2.5-7B-Instruct atuou como aluno, sendo ajustado por fine-tuning supervisionado (Low-Rank Adaptation (LoRA)) a partir das saídas geradas pelo professor, seguindo os conceitos da técnica Sequence-Level Knowledge Distillation (Kim e Rush, 2016). O desempenho do aluno foi avaliado em um conjunto de teste reservado, antes e depois do fine-tuning, utilizando as métricas de precisão, revocação, F1-score e acurácia, permitindo mensurar o ganho obtido exclusivamente pelo ajuste dos pesos do modelo.
 
 
-Ao final, o dataset disponibilizado foi estruturado da forma a seguir:
+Ao final, o dataset disponibilizado na fase 3 foi estruturado da forma a seguir:
 
 - Primeira coluna contendo as reclamações originais retiradas da plataforma online.
 
